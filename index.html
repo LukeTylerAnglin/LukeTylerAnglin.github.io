@@ -5,514 +5,176 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luke Tyler Anglin | AI Engineer</title>
-    <meta name="description"
-        content="AI Engineer specializing in LLMs, RAG systems, and Cloud Architecture. Portfolio of Luke Anglin.">
-    <link rel="stylesheet" href="styles.css">
-    <!-- Google Fonts: Geist -->
+    <meta name="description" content="Luke Tyler Anglin builds practical AI systems measured by time saved, costs reduced, and revenue created.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Geist+Sans:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap"
-        rel="stylesheet">
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@0,500;0,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
-    <header>
-        <div class="container">
-            <a href="index.html" class="logo">Luke Anglin</a>
-            <div class="nav-right">
-                <div class="socials-wrapper">
-                    <button class="socials-btn" id="socialsBtn" aria-label="Social links">Socials</button>
-                    <div class="socials-modal" id="socialsModal">
-                        <a href="https://www.youtube.com/@luketyleranglin" target="_blank" aria-label="YouTube">
-                            <i class="fab fa-youtube"></i>
-                            <span>YouTube</span>
-                        </a>
-                        <a href="https://www.twitch.tv/luketyleranglin" target="_blank" aria-label="Twitch">
-                            <i class="fab fa-twitch"></i>
-                            <span>Twitch</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/luketyleranglin/" target="_blank" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                            <span>LinkedIn</span>
-                        </a>
-                        <a href="https://github.com/LukeTylerAnglin" target="_blank" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub</span>
-                        </a>
-                        <a href="https://x.com/luketyleranglin" target="_blank" aria-label="X">
-                            <i class="fab fa-twitter"></i>
-                            <span>X</span>
-                        </a>
-                        <a href="https://www.instagram.com/luketyleranglin" target="_blank" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                            <span>Instagram</span>
-                        </a>
-                        <a href="https://www.facebook.com/luketyleranglin" target="_blank" aria-label="Facebook">
-                            <i class="fab fa-facebook"></i>
-                            <span>Facebook</span>
-                        </a>
-                    </div>
-                </div>
-                <a href="assets/AIEngineer.pdf" class="resume-btn" target="_blank">Resume</a>
-                <button class="theme-toggle" aria-label="Toggle theme">
-                    <i class="fas fa-lightbulb"></i>
-                </button>
+    <header class="site-header">
+        <div class="wrap header-inner">
+            <a class="site-name" href="#top">Luke Tyler Anglin</a>
+            <div class="header-links">
+                <a href="notes.html">Notes</a>
+                <a href="about.html">About</a>
+                <a href="assets/Luke-Anglin-Resume.pdf" target="_blank">Resume</a>
             </div>
         </div>
     </header>
 
-    <!-- Page Sidebar -->
-    <aside class="page-sidebar" id="pageSidebar">
-        <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle navigation sidebar">
-            <i class="fas fa-chevron-left"></i>
-        </button>
-        <nav class="sidebar-nav">
-            <ul>
-                <li><a href="#engineer" class="sidebar-link" data-section="engineer">Mission</a></li>
-                <li><a href="#projects" class="sidebar-link" data-section="projects">Projects</a></li>
-                <li><a href="#skills" class="sidebar-link" data-section="skills">Skills</a></li>
-                <li><a href="#contact-section" class="sidebar-link" data-section="contact-section">Contact</a></li>
-            </ul>
-        </nav>
-    </aside>
-
-    <main class="container">
-
-        <!-- Hero Section -->
-        <section class="hero" id="home">
-            <img src="assets/images/profile.jpg" alt="Luke Tyler Anglin" class="profile-img">
-            <h1>Luke Tyler Anglin</h1>
-            <p class="subtitle">AI Engineer & Builder</p>
+    <main id="top">
+        <section class="hero wrap">
+            <div class="hero-copy">
+                <p class="eyebrow">AI Engineer</p>
+                <h1>I use AI to save time, save money, and make more of both.</h1>
+                <p class="hero-intro">I build and talk about practical AI that saves time, saves money, and creates revenue.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#request-time">Talk to me <span aria-hidden="true">→</span></a>
+                    <a class="button button-secondary" href="notes.html#newsletter">Join the list <span aria-hidden="true">→</span></a>
+                </div>
+            </div>
+            <figure class="hero-portrait">
+                <img src="assets/images/luke-portrait-v1.png" alt="Luke Tyler Anglin in a warm home office" fetchpriority="high">
+            </figure>
         </section>
 
-        <!-- Tech Icon Row (small badges) -->
-        <div class="tech-icons-row container" aria-hidden="false" role="list">
-            <div class="tech-icon-card" role="listitem" title="Deep Learning">
-                <i class="fas fa-brain tech-icon" aria-hidden="true"></i>
-                <div class="tech-icon-label">Deep Learning</div>
-            </div>
-            <div class="tech-icon-card" role="listitem" title="GPU Optimization">
-                <i class="fas fa-microchip tech-icon" aria-hidden="true"></i>
-                <div class="tech-icon-label">GPU Optimization</div>
-            </div>
-            <div class="tech-icon-card" role="listitem" title="Distributed Systems">
-                <i class="fas fa-network-wired tech-icon" aria-hidden="true"></i>
-                <div class="tech-icon-label">Distributed Systems</div>
-            </div>
-            <div class="tech-icon-card" role="listitem" title="Cloud Infrastructure">
-                <i class="fas fa-cloud tech-icon" aria-hidden="true"></i>
-                <div class="tech-icon-label">Cloud Infrastructure</div>
-            </div>
-            <div class="tech-icon-card" role="listitem" title="Edge AI">
-                <i class="fas fa-broadcast-tower tech-icon" aria-hidden="true"></i>
-                <div class="tech-icon-label">Edge AI</div>
-            </div>
-            <div class="tech-icon-card" role="listitem" title="Robotics">
-                <i class="fas fa-robot tech-icon" aria-hidden="true"></i>
-                <div class="tech-icon-label">Robotics</div>
-            </div>
-            <div class="tech-icon-card" role="listitem" title="Computer Vision">
-                <i class="fas fa-eye tech-icon" aria-hidden="true"></i>
-                <div class="tech-icon-label">Computer Vision</div>
-            </div>
-        </div>
-
-        <!-- Engineer Section (About) -->
-        <section id="engineer" class="section">
-            <h2>The Mission</h2>
-            <p class="mission-text">
-                I build the most powerful <strong>AI agents</strong> on the planet — working on the
-                <strong>Frontier Agents team at Scale AI</strong>, where we partner with top enterprises and frontier
-                labs to push the boundaries of what autonomous AI can achieve. My work spans three layers:
-                <strong>models</strong> (LLMs, RL, computer vision), <strong>infrastructure</strong> (distributed
-                training, GPU optimization, cloud architecture), and <strong>agentic software</strong> (backend systems,
-                APIs, automations). Previously, I worked in <strong>image and video generation at Adobe</strong>, where
-                I focused on GPU utilization, latency optimization, and building scalable AI solutions in complex
-                enterprise environments. I also spent time at <strong>Tesla</strong>, <strong>EY</strong>, and
-                <strong>Elevance Health</strong>. Outside of work, I love to learn about robotics, high-performance
-                computing, and advanced chip models.
-            </p>
-
-            <!-- Credentials Grid -->
-            <div class="credentials-grid">
-                <div class="credential-card">
-                    <i class="fas fa-graduation-cap credential-icon"></i>
-                    <div class="credential-title">University of Virginia</div>
-                    <div class="credential-subtitle">B.S. Computer Science</div>
-                </div>
-                <div class="credential-card">
-                    <i class="fas fa-network-wired credential-icon"></i>
-                    <div class="credential-title">CCNA Certified</div>
-                    <div class="credential-subtitle">Cisco Systems</div>
-                </div>
-                <div class="credential-card">
-                    <i class="fas fa-briefcase credential-icon"></i>
-                    <div class="credential-title">MBA Candidate</div>
-                    <div class="credential-subtitle">In Progress</div>
-                </div>
+        <section class="experience-strip" aria-label="Experience at Scale AI, Adobe, Tesla, EY, and Elevance Health">
+            <div class="wrap logo-strip">
+                <img src="assets/company/scale.png" alt="Scale AI">
+                <img src="assets/company/adobe.svg" alt="Adobe">
+                <img src="assets/company/tesla.svg" alt="Tesla">
+                <img src="assets/company/ey.svg" alt="EY">
+                <img src="assets/company/elevance.svg" alt="Elevance Health">
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="section">
-            <h2>Impact & Projects</h2>
-            <div class="project-logos">
-                <figure class="company-figure">
-                    <img src="assets/company/scale.png" alt="Scale AI" class="company-logo">
-                    <figcaption class="company-caption">Scale AI</figcaption>
-                </figure>
-                <figure class="company-figure">
-                    <img src="assets/company/tesla.svg" alt="Tesla" class="company-logo">
-                    <figcaption class="company-caption">Tesla</figcaption>
-                </figure>
-                <figure class="company-figure">
-                    <img src="assets/company/adobe.svg" alt="Adobe" class="company-logo">
-                    <figcaption class="company-caption">Adobe</figcaption>
-                </figure>
-                <figure class="company-figure">
-                    <img src="assets/company/ey.svg" alt="Ernst & Young" class="company-logo">
-                    <figcaption class="company-caption">EY</figcaption>
-                </figure>
-                <figure class="company-figure">
-                    <img src="assets/company/uva.svg" alt="UVA Research" class="company-logo">
-                    <figcaption class="company-caption">UVA</figcaption>
-                </figure>
-                <figure class="company-figure">
-                    <img src="assets/company/elevance.svg" alt="Elevance Health" class="company-logo">
-                    <figcaption class="company-caption">Elevance</figcaption>
-                </figure>
+        <section class="work wrap" id="experience">
+            <div class="section-heading">
+                <h2>Where I have built.</h2>
             </div>
-            <div class="project-list">
-                <!-- EMR AI Extraction -->
-                <div class="project-row">
-                    <h3 class="row-title"><i class="fas fa-file-medical project-icon"></i> EMR AI Extraction</h3>
-                    <p class="row-desc">Engineered an LLM-based API to extract structured data from medical records
-                        using OCR & Computer Vision.</p>
-                    <div class="row-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">LLMs</span>
-                        <span class="tech-tag">Computer Vision</span>
-                    </div>
-                    <div class="row-metric">
-                        <span class="metric-value">$6M+</span>
-                        <span class="metric-label">Annual Savings</span>
-                    </div>
-                    <img src="assets/company/elevance.svg" alt="Elevance" class="card-company-logo">
-                </div>
 
-                <!-- M&A Agentic RAG -->
-                <div class="project-row">
-                    <h3 class="row-title"><i class="fas fa-project-diagram project-icon"></i> M&A Agentic RAG</h3>
-                    <p class="row-desc">Multimedia Retrieval-Augmented Generation app for M&A teams with a custom
-                        recommendation engine.</p>
-                    <div class="row-tech">
-                        <span class="tech-tag">RAG</span>
-                        <span class="tech-tag">GenAI</span>
-                        <span class="tech-tag">Vector DB</span>
+            <div class="company-list">
+                <details class="company" open>
+                    <summary>
+                        <span class="company-title">Scale AI</span>
+                        <span class="company-role">Frontier Agents</span>
+                        <span class="company-toggle" aria-hidden="true"></span>
+                    </summary>
+                    <div class="company-detail">
+                        <p>Building frontier-agent systems in complex enterprise environments, including continual-learning environments, client capabilities, and agent evaluation.</p>
                     </div>
-                    <div class="row-metric">
-                        <span class="metric-value">200+ hrs</span>
-                        <span class="metric-label">Saved / Project</span>
+                </details>
+                <details class="company">
+                    <summary>
+                        <span class="company-title">Adobe</span>
+                        <span class="company-role">Forward Deployed AI</span>
+                        <span class="company-toggle" aria-hidden="true"></span>
+                    </summary>
+                    <div class="company-detail">
+                        <p>Built human-in-the-loop AI marketing workflows and high-volume, auto-scaling cloud GPU systems for image generation.</p>
                     </div>
-                    <img src="assets/company/elevance.svg" alt="Elevance" class="card-company-logo">
-                </div>
-
-                <!-- RL-Based Bid Model -->
-                <div class="project-row">
-                    <h3 class="row-title"><i class="fas fa-brain project-icon"></i> RL-Based Bid Model</h3>
-                    <p class="row-desc">Reinforcement learning model optimizing financial team operations and accuracy.
-                    </p>
-                    <div class="row-tech">
-                        <span class="tech-tag">Reinforcement Learning</span>
-                        <span class="tech-tag">Analytics</span>
+                </details>
+                <details class="company">
+                    <summary>
+                        <span class="company-title">Elevance Health</span>
+                        <span class="company-role">AI Engineering</span>
+                        <span class="company-toggle" aria-hidden="true"></span>
+                    </summary>
+                    <div class="company-detail">
+                        <p>Built medical-record extraction automation with about $2M in savings and an M&amp;A research tool that reduced work by about 200 hours per project.</p>
                     </div>
-                    <div class="row-metric">
-                        <span class="metric-value">2 wks</span>
-                        <span class="metric-label">Time Saved / Year</span>
+                </details>
+                <details class="company">
+                    <summary>
+                        <span class="company-title">EY</span>
+                        <span class="company-role">AI Technology</span>
+                        <span class="company-toggle" aria-hidden="true"></span>
+                    </summary>
+                    <div class="company-detail">
+                        <p>Built LangGraph applications to automate client vendor work, contributing about $4M in savings, while modernizing banking data systems.</p>
                     </div>
-                    <img src="assets/company/elevance.svg" alt="Elevance" class="card-company-logo">
-                </div>
-
-                <!-- Enterprise Workflow Automation -->
-                <div class="project-row">
-                    <h3 class="row-title"><i class="fas fa-robot project-icon"></i> Enterprise Workflow Automation</h3>
-                    <p class="row-desc">Architected LangChain applications that optimized workforce allocation and
-                        significantly reduced operational overhead.</p>
-                    <div class="row-tech">
-                        <span class="tech-tag">LangChain</span>
-                        <span class="tech-tag">Azure</span>
-                        <span class="tech-tag">GenAI</span>
+                </details>
+                <details class="company">
+                    <summary>
+                        <span class="company-title">Tesla</span>
+                        <span class="company-role">Data Science</span>
+                        <span class="company-toggle" aria-hidden="true"></span>
+                    </summary>
+                    <div class="company-detail">
+                        <p>Improved Kafka concurrency and helped investigate production routing systems across large Go codebases and CI/CD tooling.</p>
                     </div>
-                    <div class="row-metric">
-                        <span class="metric-value">$4M</span>
-                        <span class="metric-label">Client Savings</span>
-                    </div>
-                    <img src="assets/company/ey.svg" alt="EY" class="card-company-logo">
-                </div>
-
-                <!-- GPU Infrastructure Scaling -->
-                <div class="project-row">
-                    <h3 class="row-title"><i class="fab fa-aws project-icon"></i> GPU Infrastructure Scaling</h3>
-                    <p class="row-desc">Scaled image and video generation systems for close-topology GPU utilization
-                        using AWS EC2 P5 instances.</p>
-                    <div class="row-tech">
-                        <span class="tech-tag">AWS</span>
-                        <span class="tech-tag">GPU Clusters</span>
-                        <span class="tech-tag">GenAI Media</span>
-                    </div>
-                    <div class="row-metric">
-                        <span class="metric-value">2.5M</span>
-                        <span class="metric-label">Tokens / Day</span>
-                    </div>
-                    <img src="assets/company/adobe.svg" alt="Adobe" class="card-company-logo">
-                </div>
-
-                <!-- Frontier Agents -->
-                <div class="project-row">
-                    <h3 class="row-title"><i class="fas fa-robot project-icon"></i> Frontier AI Agents</h3>
-                    <p class="row-desc">Building next-generation autonomous AI agents for top enterprises and frontier labs — pushing the boundaries of reasoning, tool use, and multi-agent orchestration.</p>
-                    <div class="row-tech">
-                        <span class="tech-tag">AI Agents</span>
-                        <span class="tech-tag">LLMs</span>
-                        <span class="tech-tag">Multi-Agent</span>
-                    </div>
-                    <div class="row-metric">
-                        <span class="metric-value">Frontier</span>
-                        <span class="metric-label">Enterprise AI</span>
-                    </div>
-                    <img src="assets/company/scale.png" alt="Scale AI" class="card-company-logo">
-                </div>
-
-                <!-- Kafka Parallelism -->
-                <div class="project-row">
-                    <h3 class="row-title"><i class="fas fa-bolt project-icon"></i> Kafka Parallelism Optimization</h3>
-                    <p class="row-desc">Implemented parallelism speedups for high-throughput Kafka operations, enhancing
-                        real-time data processing.</p>
-                    <div class="row-tech">
-                        <span class="tech-tag">Kafka</span>
-                        <span class="tech-tag">Distributed Systems</span>
-                        <span class="tech-tag">Big Data</span>
-                    </div>
-                    <div class="row-metric">
-                        <span class="metric-value">~2x</span>
-                        <span class="metric-label">Throughput Increase</span>
-                    </div>
-                    <img src="assets/company/tesla.svg" alt="Tesla" class="card-company-logo">
-                </div>
+                </details>
             </div>
         </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="section">
-            <h2>Technical Arsenal</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Languages</h3>
-                    <div class="skill-chips">
-                        <span>Python</span>
-                        <span>C++</span>
-                        <span>CUDA</span>
-                        <span>Rust</span>
-                        <span>Go</span>
-                        <span>SQL</span>
-                        <span>JavaScript</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>AI & ML</h3>
-                    <div class="skill-chips">
-                        <span>LLMs</span>
-                        <span>RAG</span>
-                        <span>PyTorch</span>
-                        <span>TensorFlow</span>
-                        <span>RL</span>
-                        <span>Computer Vision</span>
-                        <span>Diffusion</span>
-                        <span>AI Agents</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Cloud & DevOps</h3>
-                    <div class="skill-chips">
-                        <span>AWS</span>
-                        <span>Azure</span>
-                        <span>GCP</span>
-                        <span>Docker</span>
-                        <span>K8s</span>
-                        <span>Kafka</span>
-                        <span>Terraform</span>
-                        <span>Prometheus</span>
-                        <span>Grafana</span>
-                    </div>
-                </div>
+        <section class="research-preview wrap" id="research">
+            <div class="section-heading">
+                <p class="eyebrow">Independent research</p>
+                <h2>Testing the systems behind useful AI.</h2>
+                <p>I build small, reproducible studies around performance, evaluation, interpretability, and reproducibility.</p>
+            </div>
+            <div class="research-links">
+                <a href="https://github.com/LukeTylerAnglin/research-portfolio">
+                    <span>View the research portfolio</span>
+                    <span aria-hidden="true">↗</span>
+                </a>
             </div>
         </section>
 
-
-        <!-- Contact & Newsletter Toggle Section -->
-        <section class="footer-section-toggle" id="contact-section">
-            <h2>Contact</h2>
-            <div class="form-toggle-container">
-                <div class="form-toggle-buttons">
-                    <button class="form-toggle-btn active" data-form="contact">Get in Touch</button>
-                    <button class="form-toggle-btn" data-form="newsletter">Stay Updated</button>
+        <section class="request" id="request-time">
+            <div class="wrap request-grid">
+                <div>
+                    <p class="eyebrow">Request time</p>
+                    <h2>Tell me what you have in mind.</h2>
+                    <p class="request-note">Share the quick version. If I can help, I will reply personally and we can find a time.</p>
                 </div>
-
-                <!-- Contact Form -->
-                <div class="form-section active" id="contact-form-section">
-                    <div class="contact-wrapper">
-                        <form action="https://formspree.io/f/mojjjrwe" method="POST" class="contact-form">
-                            <input type="email" name="email" placeholder="Your Email" required>
-                            <textarea name="message" placeholder="Your Message" required></textarea>
-                            <button type="submit" class="btn-primary">Send Message</button>
-                        </form>
-                    </div>
-                </div>
-
-                <!-- Newsletter Form -->
-                <div class="form-section" id="newsletter-form-section">
-                    <p class="section-subtitle">Get insights on AI, distributed systems, and technology—no spam, just
-                        quality ideas.</p>
-                    <div class="newsletter-wrapper">
-                        <form action="https://formspree.io/f/mojjjrwe" method="POST" class="newsletter-form">
-                            <input type="hidden" name="_subject" value="Newsletter Signup">
-                            <div class="newsletter-input-wrapper">
-                                <input type="email" name="email" placeholder="Enter your email" required
-                                    aria-label="Enter your email">
-                                <input type="submit" value="Subscribe" class="btn-primary newsletter-submit">
-                            </div>
-                        </form>
-                    </div>
-                </div>
+                <form action="https://formspree.io/f/mojjjrwe" method="POST" class="request-form">
+                    <label>
+                        Your name
+                        <input type="text" name="name" autocomplete="name" required>
+                    </label>
+                    <label>
+                        Email
+                        <input type="email" name="email" autocomplete="email" required>
+                    </label>
+                    <label>
+                        What's this about?
+                        <textarea name="message" rows="4" required></textarea>
+                    </label>
+                    <input type="hidden" name="form_type" value="Request time">
+                    <input type="hidden" name="subject" value="New request for time from luketyleranglin.github.io">
+                    <input class="honeypot" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+                    <button class="button button-primary" type="submit">Send request <span aria-hidden="true">→</span></button>
+                </form>
             </div>
         </section>
-
     </main>
 
-    <footer>
-        <div class="social-footer">
-            <a href="https://www.youtube.com/@luketyleranglin" target="_blank" aria-label="YouTube">
-                <i class="fab fa-youtube"></i>
-            </a>
-            <a href="https://www.twitch.tv/luketyleranglin" target="_blank" aria-label="Twitch">
-                <i class="fab fa-twitch"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/luketyleranglin/" target="_blank" aria-label="LinkedIn">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/LukeTylerAnglin" target="_blank" aria-label="GitHub">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://x.com/luketyleranglin" target="_blank" aria-label="X">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://www.instagram.com/luketyleranglin" target="_blank" aria-label="Instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.facebook.com/luketyleranglin" target="_blank" aria-label="Facebook">
-                <i class="fab fa-facebook"></i>
-            </a>
+    <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <div class="footer-links">
+                <div class="social-links" aria-label="Social links">
+                    <a href="https://www.linkedin.com/in/luketyleranglin/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.1 3.4A2.1 2.1 0 1 1 .9 3.4a2.1 2.1 0 0 1 4.2 0ZM1.3 8h3.6v11.6H1.3V8Zm5.9 0h3.5v1.6h.1c.5-.9 1.7-2 3.6-2 3.9 0 4.6 2.5 4.6 5.9v6.1h-3.6v-5.4c0-1.3 0-3-1.9-3-1.9 0-2.2 1.4-2.2 2.9v5.5H7.2V8Z"/></svg>
+                    </a>
+                    <a href="https://github.com/LukeTylerAnglin" target="_blank" rel="noreferrer" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.8A10.2 10.2 0 0 0 8.8 21.7c.5.1.7-.2.7-.5v-2c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.4-1.1.7-1.3-2.3-.3-4.7-1.1-4.7-5a3.9 3.9 0 0 1 1-2.7c-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1.1a9.7 9.7 0 0 1 5.1 0c2-1.4 2.8-1.1 2.8-1.1.5 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.4 4.7-4.7 5 .4.3.7 1 .7 1.9v2.8c0 .3.2.6.7.5A10.2 10.2 0 0 0 12 1.8Z"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/luketyleranglin" target="_blank" rel="noreferrer" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.1 2h9.8A5.1 5.1 0 0 1 22 7.1v9.8a5.1 5.1 0 0 1-5.1 5.1H7.1A5.1 5.1 0 0 1 2 16.9V7.1A5.1 5.1 0 0 1 7.1 2Zm-.2 2A2.9 2.9 0 0 0 4 6.9v10.2A2.9 2.9 0 0 0 6.9 20h10.2a2.9 2.9 0 0 0 2.9-2.9V6.9A2.9 2.9 0 0 0 17.1 4H6.9Zm10.7 1.5a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4ZM12 6.8a5.2 5.2 0 1 1 0 10.4 5.2 5.2 0 0 1 0-10.4Zm0 2A3.2 3.2 0 1 0 12 15.2 3.2 3.2 0 0 0 12 8.8Z"/></svg>
+                    </a>
+                    <a href="https://www.youtube.com/@luketyleranglin" target="_blank" rel="noreferrer" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22.5 6.2a2.9 2.9 0 0 0-2-2C18.7 3.7 12 3.7 12 3.7s-6.7 0-8.5.5a2.9 2.9 0 0 0-2 2A30.1 30.1 0 0 0 1 12a30.1 30.1 0 0 0 .5 5.8 2.9 2.9 0 0 0 2 2c1.8.5 8.5.5 8.5.5s6.7 0 8.5-.5a2.9 2.9 0 0 0 2-2A30.1 30.1 0 0 0 23 12a30.1 30.1 0 0 0-.5-5.8ZM9.8 15.5v-7l6 3.5-6 3.5Z"/></svg>
+                    </a>
+                    <a href="https://www.tiktok.com/@luketyleranglin" target="_blank" rel="noreferrer" aria-label="TikTok">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.8 5.8a6.5 6.5 0 0 1-4-1.4 6.5 6.5 0 0 1-1.9-3.2H8.1v14.2a2.6 2.6 0 1 1-1.8-2.5v-3a5.6 5.6 0 1 0 5.5 5.6V8.3a9.3 9.3 0 0 0 5 1.5V6.9a6.8 6.8 0 0 1 0-1.1Z"/></svg>
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
-
-    <script>
-
-        // Theme Toggle
-        document.addEventListener('DOMContentLoaded', () => {
-            const themeToggle = document.querySelector('.theme-toggle');
-            const themeIcon = themeToggle.querySelector('i');
-
-            const savedTheme = localStorage.getItem('theme') || 'dark';
-            document.documentElement.setAttribute('data-theme', savedTheme);
-            updateThemeIcon(savedTheme);
-
-            themeToggle.addEventListener('click', () => {
-                const currentTheme = document.documentElement.getAttribute('data-theme');
-                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-                document.documentElement.setAttribute('data-theme', newTheme);
-                localStorage.setItem('theme', newTheme);
-                updateThemeIcon(newTheme);
-            });
-
-            function updateThemeIcon(theme) {
-                themeIcon.className = theme === 'dark' ? 'fas fa-lightbulb' : 'fas fa-moon';
-            }
-
-            // Socials Modal
-            const socialsBtn = document.getElementById('socialsBtn');
-            const socialsModal = document.getElementById('socialsModal');
-
-            if (socialsBtn && socialsModal) {
-                socialsBtn.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    socialsModal.classList.toggle('active');
-                });
-
-                document.addEventListener('click', (e) => {
-                    if (!e.target.closest('.socials-wrapper')) {
-                        socialsModal.classList.remove('active');
-                    }
-                });
-            }
-
-            // Add active state tracking for sidebar
-            const sidebarLinks = document.querySelectorAll('.sidebar-link');
-            const sections = document.querySelectorAll('#engineer, #projects, #skills, #contact-section');
-
-            window.addEventListener('scroll', () => {
-                let current = '';
-                sections.forEach(section => {
-                    const rect = section.getBoundingClientRect();
-                    if (rect.top <= 100) {
-                        current = section.id;
-                    }
-                });
-
-                sidebarLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('data-section') === current) {
-                        link.classList.add('active');
-                    }
-                });
-            });
-
-            // Sidebar toggle for mobile
-            const sidebarToggle = document.getElementById('sidebarToggle');
-            const pageSidebar = document.getElementById('pageSidebar');
-            if (sidebarToggle) {
-                sidebarToggle.addEventListener('click', () => {
-                    pageSidebar.classList.toggle('active');
-                });
-            }
-
-            // Form Toggle (Contact & Newsletter)
-            const formToggleBtns = document.querySelectorAll('.form-toggle-btn');
-            const formSections = document.querySelectorAll('.form-section');
-
-            formToggleBtns.forEach(btn => {
-                btn.addEventListener('click', () => {
-                    const formType = btn.getAttribute('data-form');
-
-                    // Remove active from all buttons and sections
-                    formToggleBtns.forEach(b => b.classList.remove('active'));
-                    formSections.forEach(section => section.classList.remove('active'));
-
-                    // Add active to clicked button and corresponding section
-                    btn.classList.add('active');
-                    const targetSection = document.getElementById(formType + '-form-section');
-                    if (targetSection) {
-                        targetSection.classList.add('active');
-                    }
-                });
-            });
-        });
-    </script>
 </body>
 
 </html>
