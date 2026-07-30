@@ -43,6 +43,24 @@ button, input, select, textarea { font: inherit; }
 
 .site-name, .header-links a { font-size: 0.92rem; font-weight: 700; letter-spacing: -0.03em; text-decoration: none; }
 
+.site-name { align-items: center; display: inline-flex; gap: 9px; }
+
+.home-link-icon {
+  align-items: center;
+  background: var(--ink);
+  border-radius: 50%;
+  color: var(--paper);
+  display: inline-flex;
+  height: 23px;
+  justify-content: center;
+  transition: transform 150ms ease, background 150ms ease;
+  width: 23px;
+}
+
+.home-link-icon svg { fill: currentColor; height: 13px; width: 13px; }
+
+.site-name:hover .home-link-icon { background: #34363a; transform: translateY(-1px); }
+
 .header-links { align-items: center; display: flex; gap: 18px; }
 
 .header-links span { margin-left: 5px; }
