@@ -309,10 +309,6 @@ input:focus, select:focus, textarea:focus { border-color: var(--ink); outline: n
 
 .notes-list { padding-bottom: 74px; }
 
-.notes-list-heading { border-bottom: 1px solid var(--line); padding-bottom: 16px; }
-
-.notes-list-heading .eyebrow { margin-bottom: 0; }
-
 .note-card { align-items: start; border-bottom: 1px solid var(--line); display: grid; gap: 22px; grid-template-columns: 1fr; padding: 30px 0 36px; text-decoration: none; transition: background 150ms ease; }
 
 .note-card-meta { color: var(--soft-ink); display: flex; font-family: var(--mono); font-size: 0.68rem; justify-content: space-between; letter-spacing: 0.055em; text-transform: uppercase; }
