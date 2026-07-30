@@ -31,8 +31,8 @@
                 <h1>I use AI to save time and build wealth.</h1>
                 <p class="hero-intro">I build and talk about practical, metrics-first AI systems that reduce costs, increase productivity, and create new opportunities.</p>
                 <div class="hero-actions">
-                    <a class="button button-primary" href="#request-time">Talk to me <span aria-hidden="true">→</span></a>
-                    <a class="button button-primary" href="#newsletter">Join the list <span aria-hidden="true">→</span></a>
+                    <a class="button button-secondary" href="#request-time">Talk to me <span aria-hidden="true">→</span></a>
+                    <a class="button button-secondary" href="#newsletter">Join the list <span aria-hidden="true">→</span></a>
                 </div>
             </div>
             <figure class="hero-portrait">
@@ -131,12 +131,14 @@
             </div>
             <form action="https://formspree.io/f/mojjjrwe" method="POST" class="newsletter-form">
                 <label class="sr-only" for="homepage-newsletter-email">Email address</label>
-                <input id="homepage-newsletter-email" type="email" name="email" autocomplete="email" placeholder="Email address" required>
+                <div class="newsletter-form-row">
+                    <input id="homepage-newsletter-email" type="email" name="email" autocomplete="email" placeholder="Email address" required>
+                    <button class="button button-primary" type="submit">Join the list <span aria-hidden="true">→</span></button>
+                </div>
+                <label class="consent"><input type="checkbox" name="marketing_consent" value="yes" required> Send me occasional practical AI notes.</label>
                 <input type="hidden" name="form_type" value="Newsletter signup">
                 <input type="hidden" name="subject" value="New newsletter signup from luketyleranglin.github.io">
                 <input class="honeypot" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
-                <label class="consent"><input type="checkbox" name="marketing_consent" value="yes" required> Send me occasional practical AI notes.</label>
-                <button class="button button-primary" type="submit">Join the list <span aria-hidden="true">→</span></button>
             </form>
         </section>
 

@@ -202,7 +202,15 @@ h2 { font-size: clamp(2.1rem, 6.5vw, 4rem); font-weight: 600; line-height: 1; ma
 
 .newsletter-form .button { justify-self: start; margin-top: 5px; }
 
-.homepage-newsletter { background: var(--paper-deep); border-top: 0; padding: 48px 24px 52px; }
+.homepage-newsletter { border-bottom: 1px solid var(--line); padding-bottom: 58px; padding-top: 58px; }
+
+.homepage-newsletter .newsletter-form { max-width: none; }
+
+.newsletter-form-row { align-items: center; display: flex; gap: 16px; }
+
+.newsletter-form-row input[type="email"] { flex: 1; min-width: 0; }
+
+.newsletter-form-row .button { flex: 0 0 auto; }
 
 .request-form .consent { align-items: flex-start; display: flex; font-size: 0.78rem; font-weight: 400; gap: 9px; line-height: 1.35; }
 
@@ -228,7 +236,7 @@ h2 { font-size: clamp(2.1rem, 6.5vw, 4rem); font-weight: 600; line-height: 1; ma
 
 .text-link span { margin-left: 4px; }
 
-.request { background: var(--paper-deep); padding-bottom: 78px; padding-top: 78px; }
+.request { background: var(--paper-deep); border-top: 1px solid var(--line); padding-bottom: 78px; padding-top: 78px; }
 
 .request-grid { display: grid; gap: 43px; }
 
@@ -343,6 +351,7 @@ input:focus, select:focus, textarea:focus { border-color: var(--ink); outline: n
   .button { width: 100%; }
   .request-form .button { width: 100%; }
   .hero-actions { align-items: stretch; flex-direction: column; }
+  .newsletter-form-row { align-items: stretch; flex-direction: column; }
 }
 
 @media (min-width: 680px) {
