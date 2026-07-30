@@ -4,45 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The only AI metric I care about | Luke Tyler Anglin</title>
-    <meta name="description" content="A practical filter for deciding which AI projects are worth building.">
+    <title>Contact | Luke Tyler Anglin</title>
+    <meta name="description" content="Get in touch with Luke Tyler Anglin about an AI project, research idea, or opportunity.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header class="site-header">
         <div class="wrap header-inner">
-            <a class="site-name" href="../index.html">Luke Tyler Anglin</a>
+            <a class="site-name" href="index.html">Luke Tyler Anglin</a>
             <div class="header-links">
-                <a href="../index.html">Work</a>
-                <a href="../notes.html">Notes</a>
-                <a href="../contact.html">Contact</a>
+                <a href="index.html">Work</a>
+                <a href="notes.html">Notes</a>
+                <a href="about.html">About</a>
                 <a href="https://drive.google.com/file/d/1jl4-QcdSq_O_RrT0fGCrfpogtQoKmc7f/view?usp=drive_link" target="_blank" rel="noreferrer">Resume</a>
             </div>
         </div>
     </header>
 
-    <main class="article wrap">
-        <a class="back-link" href="../notes.html">← All notes</a>
-        <h1>The only AI metric I care about</h1>
-        <p class="article-lede">Does it save time, save money, or make money? If the answer is no, it is not the first AI project I would build.</p>
+    <main>
+        <section class="contact-page wrap">
+            <div class="contact-page-copy">
+                <h1>Tell me what you have in mind.</h1>
+                <p>Share the quick version. If I can help, I’ll reply personally and we can find a time.</p>
+            </div>
 
-        <div class="article-body">
-            <p>AI can do plenty of impressive things. The harder question is whether any of them improve a real workflow.</p>
-            <p>My default filter is deliberately simple: identify the person doing the work, the work that changes, and the number that should move. The number does not need to be perfect on day one, but it should be measurable enough to tell whether the system earned its place.</p>
-            <h2>Start with the bottleneck</h2>
-            <p>Look for repetitive research, handoffs, document work, decisions that require too much context, or tasks that only happen because systems do not talk to each other. Those are usually better starting points than “where can we add a chatbot?”</p>
-            <h2>Choose a number before building</h2>
-            <p>It might be hours saved per project, cost per processed document, faster response time, conversion rate, or revenue per person. A clear number keeps the work honest and makes it easier to decide what to improve next.</p>
-            <p>That is the standard: useful AI should make time, money, or both go further.</p>
-        </div>
-
-        <section class="article-signup" aria-labelledby="article-signup-title">
-            <h2 id="article-signup-title">Get the next one.</h2>
-            <a class="button button-primary" href="../index.html#newsletter-dialog">Join the list <span aria-hidden="true">→</span></a>
+            <form action="https://formspree.io/f/mojjjrwe" method="POST" class="request-form contact-page-form">
+                <label>
+                    Your name
+                    <input type="text" name="name" autocomplete="name" required>
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" autocomplete="email" required>
+                </label>
+                <label>
+                    What’s this about?
+                    <textarea name="message" rows="5" required></textarea>
+                </label>
+                <label class="consent request-consent"><input type="checkbox" name="marketing_consent" value="yes"> Email me occasional practical AI notes too.</label>
+                <input type="hidden" name="form_type" value="Request time">
+                <input type="hidden" name="subject" value="New request for time from luketyleranglin.github.io">
+                <input class="honeypot" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+                <button class="button button-primary" type="submit">Send request <span aria-hidden="true">→</span></button>
+            </form>
         </section>
     </main>
 

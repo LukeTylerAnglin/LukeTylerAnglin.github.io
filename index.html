@@ -19,6 +19,7 @@
             <div class="header-links">
                 <a href="notes.html">Notes</a>
                 <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
                 <a href="https://drive.google.com/file/d/1jl4-QcdSq_O_RrT0fGCrfpogtQoKmc7f/view?usp=drive_link" target="_blank" rel="noreferrer">Resume</a>
             </div>
         </div>
@@ -30,8 +31,8 @@
                 <h1>I use AI to save time and build wealth.</h1>
                 <p class="hero-intro">I build and talk about practical, metrics-first AI systems that reduce costs, increase productivity, and create new opportunities.</p>
                 <div class="hero-actions">
-                    <a class="button button-primary" href="#request-time">Talk to me <span aria-hidden="true">→</span></a>
-                    <a class="button button-primary" href="#newsletter">Join the list <span aria-hidden="true">→</span></a>
+                    <a class="button button-primary" href="contact.html">Talk to me <span aria-hidden="true">→</span></a>
+                    <a class="button button-primary" href="#newsletter-dialog" data-open-newsletter>Join the list <span aria-hidden="true">→</span></a>
                 </div>
             </div>
             <figure class="hero-portrait">
@@ -121,49 +122,24 @@
             </div>
         </section>
 
-        <section class="contact-section" id="request-time">
-            <div class="wrap contact-grid">
-                <div class="contact-copy">
-                    <h2>Tell me what you have in mind.</h2>
-                    <p class="request-note">Share the quick version. If I can help, I will reply personally and we can find a time.</p>
-                    <div class="contact-newsletter" id="newsletter">
-                        <h3>Useful AI, occasionally.</h3>
-                        <p>Short notes on saving time, building wealth, and making AI useful in the real world.</p>
-                        <form action="https://formspree.io/f/mojjjrwe" method="POST" class="newsletter-form">
-                            <label class="sr-only" for="homepage-newsletter-email">Email address</label>
-                            <div class="newsletter-form-row">
-                                <input id="homepage-newsletter-email" type="email" name="email" autocomplete="email" placeholder="Email address" required>
-                                <button class="button button-primary" type="submit">Join the list <span aria-hidden="true">→</span></button>
-                            </div>
-                            <label class="consent"><input type="checkbox" name="marketing_consent" value="yes" required> Send me occasional practical AI notes.</label>
-                            <input type="hidden" name="form_type" value="Newsletter signup">
-                            <input type="hidden" name="subject" value="New newsletter signup from luketyleranglin.github.io">
-                            <input class="honeypot" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
-                        </form>
-                    </div>
-                </div>
-                <form action="https://formspree.io/f/mojjjrwe" method="POST" class="request-form">
-                    <label>
-                        Your name
-                        <input type="text" name="name" autocomplete="name" required>
-                    </label>
-                    <label>
-                        Email
-                        <input type="email" name="email" autocomplete="email" required>
-                    </label>
-                    <label>
-                        What's this about?
-                        <textarea name="message" rows="4" required></textarea>
-                    </label>
-                    <label class="consent request-consent"><input type="checkbox" name="marketing_consent" value="yes"> Email me occasional practical AI notes too.</label>
-                    <input type="hidden" name="form_type" value="Request time">
-                    <input type="hidden" name="subject" value="New request for time from luketyleranglin.github.io">
-                    <input class="honeypot" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
-                    <button class="button button-primary" type="submit">Send request <span aria-hidden="true">→</span></button>
-                </form>
-            </div>
-        </section>
     </main>
+
+    <dialog class="newsletter-dialog" id="newsletter-dialog" aria-labelledby="newsletter-dialog-title">
+        <div class="newsletter-dialog-inner">
+            <button class="dialog-close" type="button" data-close-newsletter aria-label="Close newsletter signup">×</button>
+            <h2 id="newsletter-dialog-title">Useful AI, occasionally.</h2>
+            <p>Short notes on saving time, building wealth, and making AI useful in the real world.</p>
+            <form action="https://formspree.io/f/mojjjrwe" method="POST" class="newsletter-form">
+                <label class="sr-only" for="homepage-newsletter-email">Email address</label>
+                <input id="homepage-newsletter-email" type="email" name="email" autocomplete="email" placeholder="Email address" required>
+                <label class="consent"><input type="checkbox" name="marketing_consent" value="yes" required> Send me occasional practical AI notes.</label>
+                <input type="hidden" name="form_type" value="Newsletter signup">
+                <input type="hidden" name="subject" value="New newsletter signup from luketyleranglin.github.io">
+                <input class="honeypot" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+                <button class="button button-primary" type="submit">Join the list <span aria-hidden="true">→</span></button>
+            </form>
+        </div>
+    </dialog>
 
     <footer class="site-footer">
         <div class="wrap footer-inner">
@@ -188,6 +164,27 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const newsletterDialog = document.getElementById("newsletter-dialog");
+        const openNewsletter = () => {
+            if (newsletterDialog && !newsletterDialog.open) newsletterDialog.showModal();
+        };
+
+        document.querySelectorAll("[data-open-newsletter]").forEach((link) => {
+            link.addEventListener("click", (event) => {
+                event.preventDefault();
+                openNewsletter();
+            });
+        });
+
+        document.querySelector("[data-close-newsletter]")?.addEventListener("click", () => newsletterDialog.close());
+        newsletterDialog?.addEventListener("click", (event) => {
+            if (event.target === newsletterDialog) newsletterDialog.close();
+        });
+
+        if (window.location.hash === "#newsletter-dialog") openNewsletter();
+    </script>
 </body>
 
 </html>
