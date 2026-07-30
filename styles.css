@@ -202,21 +202,59 @@ h2 { font-size: clamp(2.1rem, 6.5vw, 4rem); font-weight: 600; line-height: 1; ma
 
 .newsletter-form-row .button { flex: 0 0 auto; }
 
-.contact-section { background: var(--paper-deep); border-top: 1px solid var(--line); padding-bottom: 92px; padding-top: 92px; }
+.newsletter-dialog {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  color: var(--ink);
+  margin: auto;
+  max-width: 520px;
+  padding: 0;
+  width: calc(100% - 32px);
+}
 
-.contact-grid { display: grid; gap: 64px; }
+.newsletter-dialog::backdrop { background: rgba(27, 28, 31, 0.38); backdrop-filter: blur(5px); }
 
-.contact-copy h2 { max-width: 500px; }
+.newsletter-dialog-inner { padding: 36px; position: relative; }
 
-.contact-newsletter { border-top: 1px solid var(--line); margin-top: 56px; padding-top: 28px; }
+.newsletter-dialog h2 { font-size: clamp(2rem, 6vw, 3.2rem); margin-bottom: 14px; max-width: 400px; }
 
-.contact-newsletter h3 { font-size: clamp(1.65rem, 4vw, 2.35rem); letter-spacing: -0.05em; line-height: 1; margin-bottom: 10px; }
+.newsletter-dialog p { color: var(--soft-ink); line-height: 1.55; margin-bottom: 0; max-width: 390px; }
 
-.contact-newsletter > p:not(.eyebrow) { color: var(--soft-ink); line-height: 1.55; margin-bottom: 22px; max-width: 400px; }
+.newsletter-dialog .newsletter-form { margin-top: 28px; max-width: none; }
 
-.contact-newsletter .newsletter-form { max-width: 520px; }
+.newsletter-dialog .newsletter-form-row { align-items: stretch; flex-direction: column; }
 
-.contact-newsletter .newsletter-form .button { margin-top: 0; }
+.newsletter-dialog .newsletter-form .button { justify-self: stretch; width: 100%; }
+
+.dialog-close {
+  align-items: center;
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--ink);
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 1.35rem;
+  height: 36px;
+  justify-content: center;
+  line-height: 1;
+  padding: 0 0 3px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 36px;
+}
+
+.dialog-close:hover { background: var(--quiet); }
+
+.contact-page { display: grid; gap: 64px; padding-bottom: 100px; padding-top: 96px; }
+
+.contact-page-copy h1 { max-width: 600px; }
+
+.contact-page-copy > p { color: var(--soft-ink); font-size: 1.1rem; line-height: 1.6; margin-bottom: 0; max-width: 520px; }
+
+.contact-page-form { max-width: 640px; }
 
 .request-form .consent { align-items: flex-start; display: flex; font-size: 0.78rem; font-weight: 400; gap: 9px; line-height: 1.35; }
 
@@ -363,7 +401,8 @@ input:focus, select:focus, textarea:focus { border-color: var(--ink); outline: n
   .hero-portrait { aspect-ratio: auto; height: clamp(480px, 45vw, 560px); }
   .work { padding-bottom: 112px; padding-top: 112px; }
   .company summary { grid-template-columns: minmax(310px, 1.2fr) minmax(270px, 0.8fr) 26px; min-height: 85px; }
-  .contact-grid { align-items: start; grid-template-columns: minmax(0, 0.92fr) minmax(380px, 0.8fr); gap: 120px; }
+  .contact-page { align-items: start; grid-template-columns: minmax(0, 0.92fr) minmax(380px, 0.8fr); gap: 120px; padding-bottom: 140px; padding-top: 132px; }
+  .contact-page-form { max-width: none; }
   .book { grid-template-columns: 152px 1fr; padding-bottom: 105px; padding-top: 58px; }
   .book > img { width: 152px; }
   .footer-inner { flex-direction: row; justify-content: center; }
