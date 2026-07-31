@@ -65,6 +65,10 @@ button, input, select, textarea { font: inherit; }
 
 .header-links span { margin-left: 5px; }
 
+.header-github { align-items: center; display: inline-flex; order: 1; }
+
+.header-github svg { fill: currentColor; height: 18px; width: 18px; }
+
 .hero { display: grid; gap: 42px; padding-bottom: 66px; padding-top: 54px; }
 
 .hero-copy { align-self: center; }
@@ -190,21 +194,9 @@ h2 { font-size: clamp(2.1rem, 6.5vw, 4rem); font-weight: 600; line-height: 1; ma
 
 .company-detail p { color: var(--soft-ink); font-size: 0.98rem; line-height: 1.6; margin: 0; max-width: 660px; }
 
-.research-preview { border-top: 1px solid var(--line); padding-bottom: 78px; padding-top: 78px; }
-
-.research-preview .section-heading { margin-bottom: 28px; }
-
-.research-preview .section-heading > p:last-child { margin-bottom: 0; }
-
-.research-links { border-top: 1px solid var(--line); }
-
-.research-links a { align-items: center; border-bottom: 1px solid var(--line); display: flex; font-size: 1rem; font-weight: 700; justify-content: space-between; padding: 22px 0; text-decoration: none; }
-
-.research-links a:hover { color: var(--soft-ink); }
-
 .newsletter-form { display: grid; gap: 13px; max-width: 440px; }
 
-.newsletter-form > input[type="email"] { font-size: 1rem; }
+.newsletter-form input[type="email"] { font-size: 1rem; }
 
 .consent { align-items: flex-start; color: var(--soft-ink); display: flex; font-size: 0.78rem; gap: 9px; line-height: 1.35; }
 
@@ -398,6 +390,13 @@ input:focus, select:focus, textarea:focus { border-color: var(--ink); outline: n
 .article-signup { border-top: 1px solid var(--line); margin-top: 58px; padding-top: 30px; }
 
 .article-signup h2 { font-size: clamp(1.7rem, 5vw, 2.5rem); margin-bottom: 20px; }
+
+@media (max-width: 520px) {
+  .header-inner { height: 64px; }
+  .site-name > span:last-child { display: none; }
+  .header-links { gap: 12px; }
+  .site-name, .header-links a { font-size: 0.84rem; }
+}
 
 @media (max-width: 480px) {
   .button { width: 100%; }
