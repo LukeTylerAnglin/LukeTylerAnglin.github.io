@@ -23,7 +23,8 @@
             <div class="header-links">
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
-                <a href="https://drive.google.com/file/d/1jl4-QcdSq_O_RrT0fGCrfpogtQoKmc7f/view?usp=drive_link" target="_blank" rel="noreferrer">Resume</a>
+                <a href="https://github.com/LukeTylerAnglin" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="https://drive.google.com/file/d/18MWk6rue3rH5zbpRPkLEcPBLwXOIvmw3/view" target="_blank" rel="noreferrer">Resume</a>
             </div>
         </div>
     </header>
@@ -112,19 +113,6 @@
             </div>
         </section>
 
-        <section class="research-preview wrap" id="research">
-            <div class="section-heading">
-                <h2>Testing the systems behind useful AI.</h2>
-                <p>I build small, reproducible studies around performance, evaluation, interpretability, and reproducibility.</p>
-            </div>
-            <div class="research-links">
-                <a href="https://github.com/LukeTylerAnglin/research-portfolio">
-                    <span>View the research portfolio</span>
-                    <span aria-hidden="true">↗</span>
-                </a>
-            </div>
-        </section>
-
     </main>
 
     <dialog class="newsletter-dialog" id="newsletter-dialog" aria-labelledby="newsletter-dialog-title">
@@ -132,14 +120,10 @@
             <button class="dialog-close" type="button" data-close-newsletter aria-label="Close newsletter signup">×</button>
             <h2 id="newsletter-dialog-title">Useful AI, occasionally.</h2>
             <p>Short notes on saving time, building wealth, and making AI useful in the real world.</p>
-            <form action="https://formspree.io/f/mojjjrwe" method="POST" class="newsletter-form">
+            <form action="https://app.kit.com/forms/9748890/subscriptions" method="POST" class="newsletter-form seva-form formkit-form" data-sv-form="9748890" data-uid="eea94679c6" data-format="inline" data-version="5" data-options='{"settings":{"after_subscribe":{"action":"message","success_message":"You’re in!","redirect_url":""}}}'>
                 <label class="sr-only" for="homepage-newsletter-email">Email address</label>
-                <input id="homepage-newsletter-email" type="email" name="email" autocomplete="email" placeholder="Email address" required>
-                <label class="consent"><input type="checkbox" name="marketing_consent" value="yes" required> Send me occasional practical AI notes.</label>
-                <input type="hidden" name="form_type" value="Newsletter signup">
-                <input type="hidden" name="subject" value="New newsletter signup from luketyleranglin.github.io">
-                <input class="honeypot" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
-                <button class="button button-primary" type="submit">Join the list <span aria-hidden="true">→</span></button>
+                <input id="homepage-newsletter-email" type="email" name="email_address" autocomplete="email" placeholder="Email address" required>
+                <button class="button button-primary formkit-submit" data-element="submit" type="submit">Join the list <span aria-hidden="true">→</span></button>
             </form>
         </div>
     </dialog>
@@ -168,6 +152,7 @@
         </div>
     </footer>
 
+    <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
     <script>
         const newsletterDialog = document.getElementById("newsletter-dialog");
         const openNewsletter = () => {
