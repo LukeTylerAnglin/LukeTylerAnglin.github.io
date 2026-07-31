@@ -65,7 +65,7 @@ button, input, select, textarea { font: inherit; }
 
 .header-links span { margin-left: 5px; }
 
-.header-github { align-items: center; display: inline-flex; }
+.header-github { align-items: center; display: inline-flex; order: 1; }
 
 .header-github svg { fill: currentColor; height: 18px; width: 18px; }
 
