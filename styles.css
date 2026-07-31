@@ -227,7 +227,7 @@ h2 { font-size: clamp(2.1rem, 6.5vw, 4rem); font-weight: 600; line-height: 1; ma
 
 .newsletter-dialog-inner { padding: 36px; position: relative; }
 
-.newsletter-dialog h2 { font-size: clamp(2rem, 6vw, 3.2rem); margin-bottom: 14px; max-width: 400px; }
+.newsletter-dialog h2 { font-size: clamp(2rem, 6vw, 3.2rem); margin-bottom: 14px; max-width: min(400px, calc(100% - 52px)); }
 
 .newsletter-dialog p { color: var(--soft-ink); line-height: 1.55; margin-bottom: 0; max-width: 390px; }
 
