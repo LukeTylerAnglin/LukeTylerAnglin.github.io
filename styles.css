@@ -200,7 +200,36 @@ h2 { font-size: clamp(2.1rem, 6.5vw, 4rem); font-weight: 600; line-height: 1; ma
 
 .consent { align-items: flex-start; color: var(--soft-ink); display: flex; font-size: 0.78rem; gap: 9px; line-height: 1.35; }
 
-.consent input { appearance: auto; margin: 1px 0 0; padding: 0; }
+.consent input[type="checkbox"] {
+  appearance: none;
+  background: var(--paper);
+  border: 1.5px solid var(--ink);
+  border-radius: 4px;
+  cursor: pointer;
+  display: grid;
+  flex: 0 0 18px;
+  height: 18px;
+  margin: 0;
+  padding: 0;
+  place-content: center;
+  width: 18px;
+}
+
+.consent input[type="checkbox"]::before {
+  border-bottom: 2px solid white;
+  border-left: 2px solid white;
+  content: "";
+  height: 5px;
+  transform: rotate(-45deg) scale(0);
+  transition: transform 120ms ease;
+  width: 9px;
+}
+
+.consent input[type="checkbox"]:checked { background: var(--ink); }
+
+.consent input[type="checkbox"]:checked::before { transform: rotate(-45deg) scale(1); }
+
+.consent input[type="checkbox"]:focus-visible { outline: 3px solid rgba(28, 45, 35, 0.32); outline-offset: 3px; }
 
 .honeypot { display: none !important; }
 
