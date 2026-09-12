@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Workflow Vault | Luke Tyler Anglin</title>
+    <meta name="description" content="Exact prompts from Luke Tyler Anglin's AI workflow videos — copy-paste ready with guardrails.">
+    <meta property="og:title" content="AI Workflow Vault — Exact prompts from my videos">
+    <meta property="og:description" content="Exact AI workflows I run in my posts.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="wrap header-inner">
+            <a class="site-name" href="index.html" aria-label="Home — Luke Tyler Anglin" title="Home">
+                <span class="home-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m4 10 8-6 8 6v9a1 1 0 0 1-1 1h-5v-6h-4v6H5a1 1 0 0 1-1-1v-9Z"/></svg></span>
+                <span>Luke Tyler Anglin</span>
+            </a>
+            <nav class="header-links" aria-label="Primary">
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a class="header-github" href="https://github.com/LukeTylerAnglin" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.8A10.2 10.2 0 0 0 8.8 21.7c.5.1.7-.2.7-.5v-2c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.4-1.1.7-1.3-2.3-.3-4.7-1.1-4.7-5a3.9 3.9 0 0 1 1-2.7c-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1.1a9.7 9.7 0 0 1 5.1 0c2-1.4 2.8-1.1 2.8-1.1.5 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.4 4.7-4.7 5 .4.3.7 1 .7 1.9v2.8c0 .3.2.6.7.5A10.2 10.2 0 0 0 12 1.8Z"/></svg></a>
+                <a href="https://drive.google.com/file/d/1MeeQ3Fhj17iWsuMzlNQXVvfDCQpfirg_/view" target="_blank" rel="noreferrer">Resume</a>
+                <a href="vault.html" aria-current="page">Vault</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="vault-library wrap" id="vault-content">
+        <p class="eyebrow">AI Workflow Vault · 9 workflows · Copy-paste ready</p>
+        <h1>Prompts from my posts.</h1>
+        <p class="vault-library-lede">Every prompt below is the exact one I run in the video, with guardrails so it drafts but never sends, deletes, or invents. Click copy — then paste into ChatGPT / Claude / Codex. <a href="https://www.instagram.com/luketyleranglin" target="_blank" rel="noreferrer">Watch the Reels →</a></p>
+
+        <nav class="vault-quicklinks" aria-label="Libraries and updates">
+            <span class="vault-quicklinks-label">Libraries</span>
+            <a href="https://skills.sh" target="_blank" rel="noreferrer">skills.sh</a>
+            <a href="https://github.com/vercel-labs/agent-skills" target="_blank" rel="noreferrer">Vercel skills</a>
+            <a href="https://github.com/anthropics/skills" target="_blank" rel="noreferrer">Anthropic skills</a>
+            <a class="vault-quicklinks-more" href="#skills-index">28 picks →</a>
+            <span class="vault-quicklinks-signup" id="vault-signup-banner">
+                <a href="#vault-newsletter-dialog" data-open-vault-newsletter>Get new drops</a>
+                <button class="vault-skip-link" type="button" data-vault-skip>Skip</button>
+            </span>
+        </nav>
+
+        <div class="vault-filters" role="group" aria-label="Filter prompts">
+            <button class="filter-chip active" data-filter="all">All 9</button>
+            <button class="filter-chip" data-filter="lead">Lead gen 2</button>
+            <button class="filter-chip" data-filter="inbox">Inbox 1</button>
+            <button class="filter-chip" data-filter="content">Content 3</button>
+            <button class="filter-chip" data-filter="build">Build 2</button>
+            <button class="filter-chip" data-filter="marketing">Marketing 3</button>
+        </div>
+
+        <section class="vault-section" aria-label="Workflow prompts">
+            <article class="prompt-entry" data-tags="lead" aria-labelledby="lead-sourcing-title">
+                <div class="prompt-head">
+                    <p class="prompt-index">01 / LEAD SOURCING / FROM POST</p>
+                    <div class="prompt-actions">
+                        <button class="copy-btn" type="button" data-copy="lead-sourcing">Copy prompt</button>
+                        <a href="https://www.instagram.com/luketyleranglin" target="_blank" rel="noreferrer" class="copy-btn secondary">Watch Reel ↗</a>
+                    </div>
+                </div>
+                <h2 id="lead-sourcing-title">Build an auditable lead list.</h2>
+                <p class="prompt-description"><em>Creates a reviewable Google Sheet from just an ideal customer profile and geography. It sources prospects; it never contacts them.</em></p>
+                <pre class="prompt-code" id="code-lead-sourcing"><code>I want you to find leads for me. Connect to Google Sheets and create a Google Sheet in my Google Drive containing leads in my niche.
+
+Start by asking only:
+1. Ideal customer profile
+2. Geography, if applicable
+
+You shouldn't need anything else. Use approved public sources, include the source URL for each lead, and do not contact anyone or send outreach. You may use the Chrome connector to help; if I don't have it installed, ask me to install it.</code></pre>
+            </article>
+
+            <article class="prompt-entry" data-tags="inbox" aria-labelledby="inbox-title">
+                <div class="prompt-head">
+                    <p class="prompt-index">02 / INBOX TRIAGE / FROM POST</p>
+                    <div class="prompt-actions">
+                        <button class="copy-btn" type="button" data-copy="inbox">Copy prompt</button>
+                        <a href="https://www.instagram.com/luketyleranglin" target="_blank" rel="noreferrer" class="copy-btn secondary">Watch Reel ↗</a>
+                    </div>
+                </div>
+                <h2 id="inbox-title">Triage a Gmail inbox without risky automation.</h2>
+                <p class="prompt-description"><em>Finds what needs attention, creates reply drafts and a to-do list, then archives only clearly safe messages.</em></p>
+                <pre class="prompt-code" id="code-inbox"><code>Review my entire current Gmail inbox and continue through every results page until nothing remains unreviewed. Classify each message as Needs Reply, Action Required, Keep in Inbox, or Safe to Archive. Read the thread when necessary to check whether I already replied. Draft responses where I clearly owe one, but never send them. Create one prioritized to-do list with deadlines and source emails. Create and apply matching Gmail labels, and archive only messages that are clearly safe to archive. Never delete, unsubscribe, report spam, or alter account settings. When uncertain, keep the message in my inbox. Finish with counts, drafts created, the to-do list, deadlines, and anything uncertain.</code></pre>
+            </article>
+
+            <article class="prompt-entry" data-tags="lead marketing" aria-labelledby="outreach-title">
+                <div class="prompt-head">
+                    <p class="prompt-index">03 / COLD OUTREACH / REBUILT FROM POST</p>
+                    <div class="prompt-actions">
+                        <button class="copy-btn" type="button" data-copy="outreach">Copy prompt</button>
+                    </div>
+                </div>
+                <h2 id="outreach-title">Draft personalized outreach from a lead sheet.</h2>
+                <p class="prompt-description"><em>The workflow from my outreach post, rebuilt as a safe draft-first prompt. Review every email before it goes out.</em></p>
+                <pre class="prompt-code" id="code-outreach"><code>I have a lead list in [Google Sheet / pasted table]. For each row, use only the listed information and the company's public website to write a concise first outreach email.
+
+Rules:
+- Personalize only with facts you can verify.
+- Make one clear, relevant offer and one low-pressure call to action.
+- Never invent results, clients, or familiarity.
+- Never send an email, create a campaign, or change Gmail settings.
+- Produce drafts only, in batches of [5], with the source facts used for each draft.
+- Flag missing information instead of guessing.
+
+Start with the first [5] leads and wait for my approval before creating another batch.</code></pre>
+            </article>
+
+            <article class="prompt-entry" data-tags="build" aria-labelledby="resume-title">
+                <div class="prompt-head">
+                    <p class="prompt-index">04 / JOB SEARCH / REBUILT FROM POST</p>
+                    <div class="prompt-actions">
+                        <button class="copy-btn" type="button" data-copy="resume">Copy prompt</button>
+                    </div>
+                </div>
+                <h2 id="resume-title">Tailor a resume to one real role.</h2>
+                <p class="prompt-description"><em>Uses a resume and job description to surface the strongest truthful fit. It helps with applications; it does not submit them for you.</em></p>
+                <pre class="prompt-code" id="code-resume"><code>I am applying for the role below. First, read my resume and the job description. Ask only the questions needed to understand my real experience.
+
+Then return:
+1. The role's top requirements
+2. The most relevant evidence already in my resume
+3. Revised resume bullets that are truthful and specific
+4. A concise tailored summary
+5. Any gaps or claims I need to verify myself
+
+Do not invent experience, metrics, credentials, or employers. Do not submit applications or answer screening questions on my behalf.
+
+Resume: [paste or attach]
+Job description: [paste]</code></pre>
+            </article>
+
+            <article class="prompt-entry" data-tags="content" aria-labelledby="content-outliers-title">
+                <div class="prompt-head">
+                    <p class="prompt-index">05 / CONTENT RESEARCH / PERSONAL SKILL</p>
+                    <div class="prompt-actions">
+                        <button class="copy-btn" type="button" data-copy="content-outliers">Copy prompt</button>
+                    </div>
+                </div>
+                <h2 id="content-outliers-title">Find videos that genuinely outperformed.</h2>
+                <p class="prompt-description"><em>Uses channel-relative performance—not just raw views—to find useful YouTube Shorts and long-form ideas.</em></p>
+                <pre class="prompt-code" id="code-content-outliers"><code>Find YouTube Shorts and long-form video outliers from the last [X] days about [TOPIC].
+
+Only include a video when it has:
+- at least [MINIMUM VIEWS] views
+- at least 1x the channel's subscriber count in views
+- at least 3x that channel's recent median views for the same format
+- at least four comparable recent videos to establish the baseline
+
+Keep Shorts and long-form separate. For every qualifying video, return the title, direct link, views per subscriber, and a one-line note on the hook or format. If no video clears every gate, say so instead of lowering the bar.</code></pre>
+            </article>
+
+            <article class="prompt-entry" data-tags="content marketing" aria-labelledby="content-ideas-title">
+                <div class="prompt-head">
+                    <p class="prompt-index">06 / CONTENT IDEAS / PERSONAL SKILL</p>
+                    <div class="prompt-actions">
+                        <button class="copy-btn" type="button" data-copy="content-ideas">Copy prompt</button>
+                    </div>
+                </div>
+                <h2 id="content-ideas-title">Turn search behavior into content worth making.</h2>
+                <p class="prompt-description"><em>Researches concrete questions, not generic “AI” topics, and ranks ideas by demand, proof, and the gap in existing content.</em></p>
+                <pre class="prompt-code" id="code-content-ideas"><code>I make [PLATFORM] content for [AUDIENCE]. Find five concrete content opportunities about [TOPIC] in [GEOGRAPHY].
+
+Use Google Trends and current platform search results. Start with specific outcomes, tools, and audience pain points—not generic terms.
+
+For each idea, return:
+1. A title or hook
+2. The search query or topic
+3. Trend evidence and time window
+4. The audience problem
+5. A simple demo I can actually show
+6. A 0–3 score for demand, momentum, specificity, proof, and gap
+
+Separate observed evidence from your inference. Recommend the one I should make first and explain why.</code></pre>
+            </article>
+
+            <article class="prompt-entry" data-tags="build" aria-labelledby="build-title">
+                <div class="prompt-head">
+                    <p class="prompt-index">07 / VIBE CODING / REBUILT FROM POST</p>
+                    <div class="prompt-actions">
+                        <button class="copy-btn" type="button" data-copy="build">Copy prompt</button>
+                        <a href="https://www.instagram.com/luketyleranglin/reel/Db4C0r8gMLW/" target="_blank" rel="noreferrer" class="copy-btn secondary">Watch Reel ↗</a>
+                    </div>
+                </div>
+                <h2 id="build-title">Build, deploy, then test a small app.</h2>
+                <p class="prompt-description"><em>My starter stack from the vibe-coding post: a database when needed, a deploy preview, and a browser test before calling it done.</em></p>
+                <pre class="prompt-code" id="code-build"><code>Help me ship a small, working version of this app:
+[describe the app]
+
+First, turn it into the smallest testable user flow. Then:
+1. Build only what that flow requires.
+2. Use Supabase for persistent data only if the app needs it.
+3. Deploy a preview with Vercel.
+4. Use Playwright to click through the actual preview and test the main flow.
+5. Report what worked, what failed, and the exact URL to review.
+
+Do not deploy to production, change billing, or add auth/payment without asking me first.</code></pre>
+            </article>
+
+            <article class="prompt-entry" data-tags="marketing content" aria-labelledby="campaign-title">
+                <div class="prompt-head">
+                    <p class="prompt-index">08 / MARKETING / REBUILT FROM POST</p>
+                    <div class="prompt-actions">
+                        <button class="copy-btn" type="button" data-copy="campaign">Copy prompt</button>
+                    </div>
+                </div>
+                <h2 id="campaign-title">Turn a website into a campaign brief.</h2>
+                <p class="prompt-description"><em>Based on the workflow in my Google marketing-tool post: pull the brand cues first, then build ideas around one real offer.</em></p>
+                <pre class="prompt-code" id="code-campaign"><code>Review this website: [URL]
+
+I need a campaign for: [PRODUCT / OFFER / EVENT]
+
+First, extract only visible brand cues: audience, positioning, voice, colors, visual motifs, offers, and proof. Then create:
+1. Three campaign angles
+2. Five short-form post ideas for the strongest angle
+3. A brief for each visual, including on-screen text
+4. A two-week publishing sequence
+
+Do not make up brand claims, testimonials, or performance results. Flag anything you could not verify on the site.</code></pre>
+            </article>
+
+            <article class="prompt-entry" data-tags="content" aria-labelledby="motion-graphics-title">
+                <div class="prompt-head">
+                    <p class="prompt-index">09 / MOTION GRAPHICS / PERSONAL SKILL</p>
+                    <div class="prompt-actions">
+                        <button class="copy-btn" type="button" data-copy="motion-graphics">Copy prompt</button>
+                    </div>
+                </div>
+                <h2 id="motion-graphics-title">Plan transcript-timed motion graphics for a Reel.</h2>
+                <p class="prompt-description"><em>Turns spoken beats into a 9:16 graphics plan you can build in Remotion or a browser canvas, then cut with talking-head footage.</em></p>
+                <pre class="prompt-code" id="code-motion-graphics"><code>I have a Reel script or beat list about [TOPIC]. Help me plan transcript-timed full-screen motion graphics for a 9:16 vertical video.
+
+For each beat, return one row with:
+1. Script — the exact spoken line or voiceover
+2. Visual — layout (`full-screen graphic`, `split-screen graphic + talking head`, or `full talking head`), on-screen text, and motion events timed to the words
+3. Sound — music bed if any, SFX triggers, and what visual moment each sound hits
+
+Rules:
+- Graphics should be a standalone 9:16 track I can cut with talking-head footage in CapCut
+- If source footage exists, note that timing should be checked with ffprobe before final sync
+- Flag beats that need a separate graphics master (e.g. Remotion or browser canvas render)
+- Do not invent product results, client names, testimonials, or performance stats
+- End with the one beat I should build first and why
+
+Start with a compact table: Script | Visual | Sound</code></pre>
+            </article>
+        </section>
+
+        <section class="vault-resources vault-resources-index" id="skills-index" aria-labelledby="skills-index-title">
+            <p class="eyebrow">Reference</p>
+            <h2 id="skills-index-title">Skills &amp; n8n automations.</h2>
+            <p class="vault-toc-lede">Install with <code>npx skills add …</code> or import n8n JSON. Living list — I’ll prune over time.</p>
+            <div class="toc-grid">
+                <div class="toc-group">
+                    <h3>Skill ecosystem</h3>
+                    <ul class="toc-list">
+                        <li><a href="https://skills.sh/vercel-labs/skills/find-skills" target="_blank" rel="noreferrer">find-skills <span aria-hidden="true">↗</span></a><span class="toc-note">Search skills.sh and install from the CLI mid-session.</span></li>
+                        <li><a href="https://skills.sh/anthropics/skills/skill-creator" target="_blank" rel="noreferrer">skill-creator <span aria-hidden="true">↗</span></a><span class="toc-note">Draft, test, benchmark, and iterate on new SKILL.md files.</span></li>
+                        <li><a href="https://cursor.com/docs/skills" target="_blank" rel="noreferrer">Cursor skills docs <span aria-hidden="true">↗</span></a><span class="toc-note">Built-in <code>/create-skill</code> and <code>/migrate-to-skills</code> workflows.</span></li>
+                        <li><a href="https://skills.sh" target="_blank" rel="noreferrer">skills.sh leaderboard <span aria-hidden="true">↗</span></a><span class="toc-note">Install counts — start here before random GitHub searches.</span></li>
+                    </ul>
+                </div>
+                <div class="toc-group">
+                    <h3>Design &amp; UI</h3>
+                    <ul class="toc-list">
+                        <li><a href="https://skills.sh/eigent-ai/agent-skills/open-design" target="_blank" rel="noreferrer">Open Design <span aria-hidden="true">↗</span></a><span class="toc-note">Local-first design system — prototypes, decks, dashboards without Figma.</span></li>
+                        <li><a href="https://github.com/manalkaff/opendesign" target="_blank" rel="noreferrer">OpenDesign (portable) <span aria-hidden="true">↗</span></a><span class="toc-note">Markdown skill pack — intake, taste rules, verifier, handoff to code.</span></li>
+                        <li><a href="https://skills.sh/anthropics/skills/frontend-design" target="_blank" rel="noreferrer">frontend-design <span aria-hidden="true">↗</span></a><span class="toc-note">Distinctive UI direction — typography, color, layout, motion.</span></li>
+                        <li><a href="https://skills.sh/vercel-labs/agent-skills/web-design-guidelines" target="_blank" rel="noreferrer">web-design-guidelines <span aria-hidden="true">↗</span></a><span class="toc-note">Audit UI against accessibility and web interface best practices.</span></li>
+                        <li><a href="https://skills.sh/vercel-labs/agent-skills/composition-patterns" target="_blank" rel="noreferrer">composition-patterns <span aria-hidden="true">↗</span></a><span class="toc-note">React composition patterns for maintainable component APIs.</span></li>
+                    </ul>
+                </div>
+                <div class="toc-group">
+                    <h3>Build &amp; ship</h3>
+                    <ul class="toc-list">
+                        <li><a href="https://skills.sh/vercel-labs/agent-skills/deploy-to-vercel" target="_blank" rel="noreferrer">deploy-to-vercel <span aria-hidden="true">↗</span></a><span class="toc-note">Ship previews and production deploys from the agent.</span></li>
+                        <li><a href="https://skills.sh/vercel-labs/agent-skills/react-best-practices" target="_blank" rel="noreferrer">react-best-practices <span aria-hidden="true">↗</span></a><span class="toc-note">Performance and patterns from the Vercel engineering team.</span></li>
+                        <li><a href="https://skills.sh/vercel-labs/agent-skills/vercel-optimize" target="_blank" rel="noreferrer">vercel-optimize <span aria-hidden="true">↗</span></a><span class="toc-note">Bundle, image, and runtime optimization checks.</span></li>
+                        <li><a href="https://github.com/supabase/agent-skills" target="_blank" rel="noreferrer">supabase <span aria-hidden="true">↗</span></a><span class="toc-note">Auth, DB, Edge Functions, Realtime, RLS — full Supabase stack.</span></li>
+                        <li><a href="https://skills.sh/supabase/agent-skills/supabase-postgres-best-practices" target="_blank" rel="noreferrer">supabase-postgres-best-practices <span aria-hidden="true">↗</span></a><span class="toc-note">Postgres performance rules ranked by impact.</span></li>
+                    </ul>
+                </div>
+                <div class="toc-group">
+                    <h3>Browser, test &amp; debug</h3>
+                    <ul class="toc-list">
+                        <li><a href="https://skills.sh/vercel-labs/agent-browser/agent-browser" target="_blank" rel="noreferrer">agent-browser <span aria-hidden="true">↗</span></a><span class="toc-note">Snapshot + ref browser automation — lighter than full Playwright MCP.</span></li>
+                        <li><a href="https://skills.sh/anthropics/skills/webapp-testing" target="_blank" rel="noreferrer">webapp-testing <span aria-hidden="true">↗</span></a><span class="toc-note">Playwright-driven testing patterns for web apps.</span></li>
+                        <li><a href="https://skills.sh/obra/superpowers/systematic-debugging" target="_blank" rel="noreferrer">systematic-debugging <span aria-hidden="true">↗</span></a><span class="toc-note">Hypothesis → test → verify loop instead of random fixes.</span></li>
+                    </ul>
+                </div>
+                <div class="toc-group">
+                    <h3>Docs &amp; content</h3>
+                    <ul class="toc-list">
+                        <li><a href="https://skills.sh/anthropics/skills/doc-coauthoring" target="_blank" rel="noreferrer">doc-coauthoring <span aria-hidden="true">↗</span></a><span class="toc-note">Structured writing loop for specs, memos, and long docs.</span></li>
+                        <li><a href="https://skills.sh/anthropics/skills/pptx" target="_blank" rel="noreferrer">pptx <span aria-hidden="true">↗</span></a><span class="toc-note">Generate and edit PowerPoint decks from agent sessions.</span></li>
+                        <li><a href="https://skills.sh/anthropics/skills/mcp-builder" target="_blank" rel="noreferrer">mcp-builder <span aria-hidden="true">↗</span></a><span class="toc-note">Build MCP servers when a skill alone isn’t enough.</span></li>
+                    </ul>
+                </div>
+                <div class="toc-group toc-group-wide">
+                    <h3>n8n automations</h3>
+                    <ul class="toc-list">
+                        <li><a href="https://n8n.io/workflows/categories/ai/" target="_blank" rel="noreferrer">n8n AI workflow gallery <span aria-hidden="true">↗</span></a><span class="toc-note">Official template library — click Use workflow to import.</span></li>
+                        <li><a href="https://github.com/n8n-io/self-hosted-ai-starter-kit" target="_blank" rel="noreferrer">Self-hosted AI starter kit <span aria-hidden="true">↗</span></a><span class="toc-note">Docker Compose baseline: n8n + Ollama + Qdrant locally.</span></li>
+                        <li><a href="https://github.com/jaybabak/ultimate-n8n-ai-workflows" target="_blank" rel="noreferrer">Ultimate n8n AI workflows <span aria-hidden="true">↗</span></a><span class="toc-note">3,400+ importable JSON workflows — RAG, agents, content factories.</span></li>
+                        <li><a href="https://n8n.io/workflows/1954-ai-agent-chat/" target="_blank" rel="noreferrer">AI agent chat <span aria-hidden="true">↗</span></a><span class="toc-note">Starter conversational agent with memory and tool routing.</span></li>
+                        <li><a href="https://n8n.io/workflows/6162-real-estate-lead-qualification-chatbot-with-gpt-4o-mini/" target="_blank" rel="noreferrer">Lead qualification chatbot <span aria-hidden="true">↗</span></a><span class="toc-note">Webhook → GPT → memory — qualify leads through chat.</span></li>
+                        <li><a href="https://github.com/GBAnjos/n8n-lead-agent" target="_blank" rel="noreferrer">n8n lead follow-up agent <span aria-hidden="true">↗</span></a><span class="toc-note">Qualify inbound leads, draft replies, log to Airtable — draft-first.</span></li>
+                        <li><a href="https://github.com/GBAnjos/n8n-lead-agent/blob/main/AI-Inbox-Triage.n8n.json" target="_blank" rel="noreferrer">n8n inbox triage <span aria-hidden="true">↗</span></a><span class="toc-note">Classify email (urgent / sales / support / spam) and alert on hot items.</span></li>
+                        <li><a href="https://n8n.io/workflows/2341-build-a-tax-code-assistant-with-qdrant-mistralai-and-openai/" target="_blank" rel="noreferrer">RAG doc assistant <span aria-hidden="true">↗</span></a><span class="toc-note">Qdrant + Mistral RAG pipeline — swap docs for your use case.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <dialog class="newsletter-dialog" id="vault-newsletter-dialog" aria-labelledby="vault-newsletter-dialog-title">
+        <div class="newsletter-dialog-inner">
+            <button class="dialog-close" type="button" data-close-vault-newsletter aria-label="Close newsletter signup">×</button>
+            <h2 id="vault-newsletter-dialog-title">Get every vault drop.</h2>
+            <p>New prompts, skills, and workflows when they land. No spam — unsubscribe anytime.</p>
+            <form action="https://app.kit.com/forms/9748890/subscriptions" method="POST" class="newsletter-form seva-form formkit-form" data-sv-form="9748890" data-uid="eea94679c6" data-format="inline" data-version="5" data-options='{"settings":{"after_subscribe":{"action":"redirect","success_message":"","redirect_url":"vault.html?subscribed=1"}}}'>
+                <label class="sr-only" for="vault-newsletter-email">Email address</label>
+                <input id="vault-newsletter-email" type="email" name="email_address" autocomplete="email" placeholder="Email address" required>
+                <button class="button button-primary formkit-submit" data-element="submit" type="submit">Join the list <span aria-hidden="true">→</span></button>
+            </form>
+        </div>
+    </dialog>
+
+    <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <div class="footer-brand">
+                <div class="footer-name">Luke Tyler Anglin</div>
+                <div class="footer-tagline">AI Engineer @ Scale AI · Frontier Agents · New York</div>
+            </div>
+            <div class="footer-links">
+                <div class="social-links" aria-label="Social links">
+                    <a href="https://www.linkedin.com/in/luketyleranglin/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.1 3.4A2.1 2.1 0 1 1 .9 3.4a2.1 2.1 0 0 1 4.2 0ZM1.3 8h3.6v11.6H1.3V8Zm5.9 0h3.5v1.6h.1c.5-.9 1.7-2 3.6-2 3.9 0 4.6 2.5 4.6 5.9v6.1h-3.6v-5.4c0-1.3 0-3-1.9-3-1.9 0-2.2 1.4-2.2 2.9v5.5H7.2V8Z"/></svg></a>
+                    <a href="https://github.com/LukeTylerAnglin" target="_blank" rel="noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.8A10.2 10.2 0 0 0 8.8 21.7c.5.1.7-.2.7-.5v-2c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.4-1.1.7-1.3-2.3-.3-4.7-1.1-4.7-5a3.9 3.9 0 0 1 1-2.7c-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1.1a9.7 9.7 0 0 1 5.1 0c2-1.4 2.8-1.1 2.8-1.1.5 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.4 4.7-4.7 5 .4.3.7 1 .7 1.9v2.8c0 .3.2.6.7.5A10.2 10.2 0 0 0 12 1.8Z"/></svg></a>
+                    <a href="https://www.instagram.com/luketyleranglin" target="_blank" rel="noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.1 2h9.8A5.1 5.1 0 0 1 22 7.1v9.8a5.1 5.1 0 0 1-5.1 5.1H7.1A5.1 5.1 0 0 1 2 16.9V7.1A5.1 5.1 0 0 1 7.1 2Zm-.2 2A2.9 2.9 0 0 0 4 6.9v10.2A2.9 2.9 0 0 0 6.9 20h10.2a2.9 2.9 0 0 0 2.9-2.9V6.9A2.9 2.9 0 0 0 17.1 4H6.9Zm10.7 1.5a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4ZM12 6.8a5.2 5.2 0 1 1 0 10.4 5.2 5.2 0 0 1 0-10.4Zm0 2A3.2 3.2 0 1 0 12 15.2 3.2 3.2 0 0 0 12 8.8Z"/></svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
+    <script>
+        const CHOICE_KEY = "vaultChoice";
+        const CHOICE_COOKIE = "vaultChoice";
+        const COOKIE_MAX_AGE = 60 * 60 * 24 * 365;
+        const signupBanner = document.getElementById("vault-signup-banner");
+
+        function readChoiceCookie() {
+            const match = document.cookie.match(new RegExp("(?:^|; )" + CHOICE_COOKIE + "=([^;]*)"));
+            return match ? decodeURIComponent(match[1]) : null;
+        }
+
+        function getVaultChoice() {
+            return localStorage.getItem(CHOICE_KEY) || readChoiceCookie();
+        }
+
+        function setVaultChoice(choice) {
+            localStorage.setItem(CHOICE_KEY, choice);
+            document.cookie = `${CHOICE_COOKIE}=${encodeURIComponent(choice)};path=/;max-age=${COOKIE_MAX_AGE};SameSite=Lax`;
+            if (signupBanner) signupBanner.hidden = true;
+        }
+
+        function hideSignupBanner() {
+            if (signupBanner) signupBanner.hidden = true;
+        }
+
+        // Migrate earlier gate unlocks
+        if (localStorage.getItem("vaultAccess") === "granted") {
+            setVaultChoice("subscribed");
+            localStorage.removeItem("vaultAccess");
+        }
+
+        const params = new URLSearchParams(window.location.search);
+        if (params.get("subscribed") === "1") {
+            setVaultChoice("subscribed");
+            window.history.replaceState({}, document.title, "vault.html");
+        }
+
+        const existingChoice = getVaultChoice();
+        if (existingChoice === "subscribed" || existingChoice === "skipped") {
+            hideSignupBanner();
+        }
+
+        document.querySelector("[data-vault-skip]")?.addEventListener("click", () => {
+            setVaultChoice("skipped");
+        });
+
+        const vaultNewsletterDialog = document.getElementById("vault-newsletter-dialog");
+        function openVaultNewsletter() {
+            if (vaultNewsletterDialog && !vaultNewsletterDialog.open) vaultNewsletterDialog.showModal();
+        }
+        document.querySelectorAll("[data-open-vault-newsletter]").forEach((link) => {
+            link.addEventListener("click", (event) => {
+                event.preventDefault();
+                openVaultNewsletter();
+            });
+        });
+        document.querySelector("[data-close-vault-newsletter]")?.addEventListener("click", () => vaultNewsletterDialog?.close());
+        vaultNewsletterDialog?.addEventListener("click", (event) => {
+            if (event.target === vaultNewsletterDialog) vaultNewsletterDialog.close();
+        });
+        if (window.location.hash === "#vault-newsletter-dialog") openVaultNewsletter();
+
+        const toast = document.getElementById("toast");
+        function showToast(msg) {
+            if (!toast) return;
+            toast.textContent = msg;
+            toast.classList.add("show");
+            setTimeout(() => toast.classList.remove("show"), 1800);
+        }
+
+        document.querySelectorAll(".copy-btn[data-copy]").forEach((btn) => {
+            btn.addEventListener("click", async () => {
+                const code = document.getElementById("code-" + btn.dataset.copy);
+                if (!code) return;
+                try {
+                    await navigator.clipboard.writeText(code.innerText);
+                    showToast("Copied ✓");
+                    const original = btn.textContent;
+                    btn.textContent = "Copied ✓";
+                    setTimeout(() => { btn.textContent = original; }, 1500);
+                } catch {
+                    showToast("Copy failed — select manually");
+                }
+            });
+        });
+
+        document.querySelectorAll(".filter-chip").forEach((chip) => {
+            chip.addEventListener("click", () => {
+                document.querySelectorAll(".filter-chip").forEach((c) => c.classList.remove("active"));
+                chip.classList.add("active");
+                const f = chip.dataset.filter;
+                document.querySelectorAll(".prompt-entry").forEach((entry) => {
+                    if (f === "all" || entry.dataset.tags.includes(f)) entry.style.display = "";
+                    else entry.style.display = "none";
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
