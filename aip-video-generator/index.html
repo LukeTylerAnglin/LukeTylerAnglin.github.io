@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>aip_video_generator — Personal Drive storage</title>
+<style>body{font:17px/1.6 system-ui,sans-serif;max-width:720px;margin:60px auto;padding:0 24px;color:#202124;background:#fff}h1{line-height:1.2}a{color:#185abc}footer{margin-top:48px;color:#5f6368}</style>
+<main>
+  <h1>aip_video_generator</h1>
+  <p>A personal video workflow operated by Luke Anglin. Its Google Drive connection stores private files, retrieves video and repair files, checks available storage, and cleans up eligible archives after upload confirmation.</p>
+  <h2>Google Drive access</h2>
+  <p>The connection uses rclone and Google OAuth to access the owner's Drive account. It requests the Drive permission needed to read existing archives, upload files, and move eligible files to Trash. Connecting this app does not make Drive files public.</p>
+  <p>The workflow keeps an upload backlog limit and a free-space reserve. New production pauses when those limits are reached. Review, repairs, upload history, and recovery records are managed locally.</p>
+  <p><a href="privacy.html">Privacy policy</a> · <a href="mailto:lukeanglin@gmail.com">Contact Luke Anglin</a></p>
+</main>
+<footer>This page describes a personal storage connection. It does not provide a public video upload service.</footer>
+</html>
